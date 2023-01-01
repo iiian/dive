@@ -3,6 +3,16 @@
 [![Pipeline Status](https://circleci.com/gh/wagoodman/dive.svg?style=svg)](https://circleci.com/gh/wagoodman/dive)
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg?style=flat)](https://www.paypal.me/wagoodman)
 
+## How to build
+
+```
+git clone git@github.com:iiian/dive.git
+cd dive
+make all
+# the program will be in ./dist/dive_<your-target-triple>/dive
+# for example, ./dist/dive_linux_amd64/dive
+```
+
 **A tool for exploring a docker image, layer contents, and discovering ways to shrink the size of your Docker/OCI image.**
 
 
@@ -81,6 +91,16 @@ With valid `source` options as such:
 - `podman`: Podman engine (linux only)
 
 ## Installation
+
+**Build by hand**
+
+```
+git clone git@github.com:iiian/dive.git
+cd dive
+make all
+# your output will be in ./dist/dive_<your-target-triple>/dive
+# for example, ./dist/dive_linux_amd64/dive
+```
 
 **Ubuntu/Debian**
 ```bash
